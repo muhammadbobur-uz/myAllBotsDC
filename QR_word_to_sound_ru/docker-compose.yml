@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: bot
+    command: python mybot.py
+    volumes:
+      - ./:/QR_word_to_sound
